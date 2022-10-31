@@ -21,7 +21,7 @@ def DefaultNDKPath(hubInstallPath, unityVersion):
 	ndkPath = None
 	if platform.system() == 'Windows':
 		ndkPath = os.path.join(unityInstallPath, 'Editor/Data/PlaybackEngines/AndroidPlayer/NDK')
-	if platform.system == 'Darwin':
+	if platform.system() == 'Darwin':
 			ndkPath = os.path.join(unityInstallPath, 'PlaybackEngines/AndroidPlayer/NDK')
 	if os.path.isdir(ndkPath):
 		return ndkPath
